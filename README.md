@@ -38,6 +38,9 @@ Here are some functions that are beyond the basic population of the graph. Those
 #####Path class:
 is a collection of nodes and edges that form a solution path.
 
+
+#####`main()` function explained:
+
 ```python
 import graph as gr
 
@@ -59,7 +62,6 @@ def main():
         game_nodes.reset_paths()
 ```
 
-#####Main function explained:
 * `edges.txt` is a global variable that contains the hard coded edge relationships. This should be dynamically generated in theory based on the specifications of the graph.
 * `game_nodes = gr.Graph()`: initializes the game/graph.
 * `start_loc`, `end_loc`: User inputs the beginning and end node IDs to solve for.
