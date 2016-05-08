@@ -1,4 +1,4 @@
-##Travel Problem Read Me
+#Travel Problem/"Six Villages Problem" Read Me
 
 ##Synopsis:
 I was searching for math brainteasers and came across this problem on the website, _Braingle_
@@ -57,6 +57,7 @@ def main():
             print(p)
         
         game_nodes.reset_paths()
+```
 
 #####Main function explained:
 * `edges.txt` is a global variable that contains the hard coded edge relationships. This should be dynamically generated in theory based on the specifications of the graph.
