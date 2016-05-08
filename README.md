@@ -19,17 +19,18 @@ To run the problem solver, run `main()`
 I basically implemented from scratch a VERY basic Graph structure, with nodes and edges.
 
 Basic functionality include 
-	#####Graph class:
-	* `graph.display_nodes()`: Visually prints all the nodes in the graph using `import matplotlib.pyplot as plt`
 
-	#####Node class:
-	* `node.add_neighbor_edges()`: Add list of edges connected to this node
-	* `node1.get_distance(node2)`: Returns _physical_ distance between 2 nodes, even if there doesn't exist an edge between these two nodes.
-	
-	#####Edge class:
-	* `edge.get_edge_pair()`: Returns the 2 nodes on the end of this edge
-	* `edge.is_edge(n1,n2)`: Given 2 nodes, determine whether this is the correct edge
-	* `edge.get_neighbor(node)`: Gets the second node given the first node in the pair
+#####Graph class:
+* `graph.display_nodes()`: Visually prints all the nodes in the graph using `import matplotlib.pyplot as plt`
+
+#####Node class:
+* `node.add_neighbor_edges()`: Add list of edges connected to this node
+* `node1.get_distance(node2)`: Returns _physical_ distance between 2 nodes, even if there doesn't exist an edge between these two nodes.
+
+#####Edge class:
+* `edge.get_edge_pair()`: Returns the 2 nodes on the end of this edge
+* `edge.is_edge(n1,n2)`: Given 2 nodes, determine whether this is the correct edge
+* `edge.get_neighbor(node)`: Gets the second node given the first node in the pair
 
 
 '''python
