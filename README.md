@@ -20,7 +20,7 @@ I basically implemented from scratch a VERY basic Graph structure, with nodes an
 
 Basic functionality include 
 	#####Graph class:
-	* 'graph.display_nodes()`: Visually prints all the nodes in the graph using `import matplotlib.pyplot as plt`
+	* `graph.display_nodes()`: Visually prints all the nodes in the graph using `import matplotlib.pyplot as plt`
 
 	#####Node class:
 	* `node.add_neighbor_edges()`: Add list of edges connected to this node
