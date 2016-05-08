@@ -6,6 +6,7 @@
 """
 
 import copy
+from math import *
 
 
 """
@@ -61,8 +62,8 @@ def main():
     createNodes(game_nodes)
     createEdges(game_nodes)
     game_nodes.set_neighbors()
-    
-    while(1):
+    END = False
+    while(not END):
         game_nodes.display_nodes()
         start_loc = int(raw_input("Start Node: "))
         end_loc = int(raw_input("End Node: "))
@@ -70,7 +71,8 @@ def main():
         print("Num paths = " + str(game_nodes.num_paths()))
         for p in game_nodes.get_paths():
             print(p)
-        
+        ask_end = raw_input("Do you want to continue? (Y/N): ")
+        if(ask_end == 'N'): END = True
         game_nodes.reset_paths()
 
 if __name__ == "__main__":

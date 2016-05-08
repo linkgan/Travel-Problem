@@ -42,15 +42,13 @@ is a collection of nodes and edges that form a solution path.
 #####`main()` function explained:
 
 ```python
-import graph as gr
-
 def main():
     game_nodes = gr.Graph()
     createNodes(game_nodes)
     createEdges(game_nodes)
     game_nodes.set_neighbors()
-    
-    while(1):
+    END = False
+    while(not END):
         game_nodes.display_nodes()
         start_loc = int(raw_input("Start Node: "))
         end_loc = int(raw_input("End Node: "))
@@ -58,7 +56,8 @@ def main():
         print("Num paths = " + str(game_nodes.num_paths()))
         for p in game_nodes.get_paths():
             print(p)
-        
+        ask_end = raw_input("Do you want to continue? (Y/N): ")
+        if(ask_end == 'N'): END = True
         game_nodes.reset_paths()
 ```
 
