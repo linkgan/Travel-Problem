@@ -1,6 +1,6 @@
-#Travel Problem/"Six Villages Problem" Read Me
+# Travel Problem/"Six Villages Problem" Read Me
 
-##Synopsis:
+## Synopsis:
 I was searching for math brainteasers and came across this problem on the website, _Braingle_
 which was ranked as the hardest problem on Braingle's website.
 
